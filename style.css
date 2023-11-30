@@ -1,0 +1,104 @@
+
+@charset "UTF-8";
+
+        
+        header{
+            border-bottom: 2px solid rgba(128, 128, 128, 0.459);
+            margin-bottom: 5px;
+            text-align: center
+        }
+
+        body {
+            font-size: 12pt;
+            font-family: Arial serif, Verdana serif;
+        }
+
+        div#formula {
+            display: inline-block;
+            margin-left: 520px;
+            width: 45%;
+            border: 2px solid gray;
+            margin-bottom: 1px;
+            box-shadow: 1px 1px 1px  gray;
+            text-align: center;
+            padding: 1px;
+        }
+
+        p {
+            margin: 5px auto 3px -120px;
+        }
+
+        p#nome {
+            margin-left: -20px;
+        }
+
+        p#nasc {
+            margin-left: -70px;
+        }
+
+        p#mae {
+            margin-left: -7px;
+        }
+
+        p#pai {
+            margin-left: -1px;
+        }
+
+        p#tel {
+            margin-left: 85px;
+        }
+
+        p#email {
+            margin-left: 35px;
+        }
+
+        fieldset#dados {
+            display: block;
+            border: 1px solid gray;
+            margin: 2px;
+        }
+
+        fieldset#informacoes {
+            display: block;
+            border: 1px solid gray;
+            margin: 2px;
+
+
+        }
+
+        table {
+            width: 100%;
+        }
+
+        td {
+            vertical-align: top;
+            border: double;
+            border-color: grey;
+            text-align: left;
+        }
+
+        legend {
+            font-weight: bolder;
+            text-align: left;
+            font-size: 12pt;
+        }
+
+        input {
+            text-transform: uppercase;
+        }
+
+        input#cmail {
+            text-transform: lowercase;
+        }
+
+        footer#rodape {
+            clear: both;
+            text-align: center;
+            margin-top: 8px;
+            margin-left: 50px;
+        }
+
+        footer#rodape input {
+            text-transform: none;
+        }
+   
