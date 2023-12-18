@@ -29,11 +29,11 @@
         }
 
         p#nome {
-            margin-left: -20px;
+            margin-left: -25px;
         }
 
         p#nasc {
-            margin-left: -70px;
+            margin-left: -85px;
         }
 
         p#mae {
@@ -45,7 +45,7 @@
         }
 
         p#tel {
-            margin-left: 85px;
+            margin-left: 87px;
         }
 
         p#email {
@@ -97,13 +97,11 @@
         }
 
         footer#rodape {
-            clear: both;
+          
             text-align: center;
-            margin-top: 8px;
-            margin-left: 50px;
+            margin-top: 10px;
+            margin-left: 40px;
+            
         }
 
-        footer#rodape input {
-            text-transform: none;
-        }
-   
+      

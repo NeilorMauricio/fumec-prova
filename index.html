@@ -13,77 +13,115 @@
         <h2>Formulário de Pré-Matrícula</h2>
     </header>
 
-    
+
     <div id="formula">
-        <form action="" method="post" enctype="multipart/form-data" target="">
+        <form autocomplete="on" action="" method="get" enctype="multipart/form-data" target="">
             <fieldset id="dados">
                 <div id="aluno">
                     <legend>Dados Pessoais:</legend>
-                    <p id="nome"><label for="cnome">Nome do Aluno:</label><input type="text" required name="tnome"
-                            id="cnome" size="30" maxlength="40" placeholder="Nome completo" /></p>
-                    <p id="nasc"><label for="cdia">Nascimento: </label><input type="datetime" name="tdia" id="cdia"
-                            size="2" maxlength="2" placeholder="Dia" />/
-                        <input type="datetime" name="tmes" id="cmes" size="2" maxlength="2" placeholder="Mês" />/<input
-                            type="datetime" name="tano" id="cme" size="3" maxlength="4" placeholder="Ano" />
+                    <p id="nome"><label for="cnome">Nome do Aluno:</label>
+
+                        <input type="text" required name="tnome" id="cnome" size="30" maxlength="40"
+                            placeholder="Nome completo" autocomplete="name" />
                     </p>
+
+
+
+                    <p id="nasc"><label for="cdia">Nascimento: </label>
+                        <input type="datetime" name="tdia" id="cdia" size="2" maxlength="2" placeholder="Dia"
+                            required />
+
+                        <input type="datetime" name="tmes" id="" size="2" maxlength="2" placeholder="Mês" required />
+
+                        <input type="datetime" name="tano" id="" size="2" maxlength="4" placeholder="Ano" required />
+                    </p>
+
+
+
                     <p id="mae"><label for="cmae">Nome da Mãe:</label><input type="text" name="tmae" id="cmae" size="30"
-                            maxlength="40" placeholder="Nome completo" /></p>
+                            maxlength="40" placeholder="Nome completo" required autocomplete="name" /></p>
+
+
+
                     <p id="pai"><label for="cpai">Nome do Pai:</label><input type="text" name="tpai" id="cpai" size="30"
-                            maxlength="40" placeholder="Nome completo" /></p>
-                    <p id="tel"><label for="cddd">Telefone: </label>(<input type="tel" name="tddd" id="cddd" size="2"
-                            maxlength="2" placeholder="DDD" />)
-                        Tel:<input type="tel" name="tfone" id="cfone" size="10" maxlength="10"
-                            placeholder="xxxx-xxxx" />
-                        Ramal:<input type="tel" name="tramal" id="cramal" size="5" maxlength="8" /></p>
-                    <p id="email"><label for="cmail">E-Mail:</label><input type="email" name="tmail" id="cmail"
-                            size="30" maxlength="30" placeholder="exemplo@exemplo.com.br" /></p>
+                            maxlength="40" placeholder="Nome completo" required autocomplete="name" /></p>
+
+
+
+                    <p id="tel"><label for="cddd">Telefone: </label>
+                        <input type="tel" name="tddd" id="cddd" size="2" maxlength="2" placeholder="(DDD)" required />
+                        Tel:<input type="tel" name="tfone" id="cfone" size="10" maxlength="10" placeholder="xxxx-xxxx"
+                            required />
+                        Ramal:<input type="tel" name="tramal" id="cramal" size="5" maxlength="8" placeholder="xxx" />
+                    </p>
+
+
+                    <p id="email"><label for="cmail">E-Mail:</label>
+                        <input type="email" name="tmail" id="cmail" size="30" maxlength="30"
+                            placeholder="exemplo@exemplo.com.br" autocomplete="email" required />
+                    </p>
                 </div>
             </fieldset>
             <fieldset id="informacoes">
                 <div>
-                   
+
                     <table>
                         <caption><strong>Informações de Matrícula:</strong></caption>
-             
+
                         <thead>
-                            <tbody>
-                                <th scope="colgroup">
-                                    <tr>
-                                        <td><label for="cserie">Série:</br>
-                                                <select name="tserie" id="cserie">
-                                                    <option value="valor1">Pré-escolar</option>
-                                                    <option value="valor2">1ª série do 1º grau</option>
-                                                </select></label>
-                                        </td>
-                                        <td>Turno:</br>
-                                            <input type="radio" name="tman" id="cman" checked /> <label
-                                                for="cman">Manhã</label></br>
-                                            <input type="radio" name="tman" id="ctar" /> <label for="ctar">Tarde</label>
-                                        </td>
-                                        <td>Atividades Extracurriculares</br>
-                                            <input type="checkbox" name="tinf" id="cinf" /><label
-                                                for="cinf">Informática</label></br>
-                                            <input type="checkbox" name="tmus" id="cmus" /><label for="cmus">Música</label></br>
-                                            <input type="checkbox" name="tbal" id="cbal" /><label for="cbal">Balet</label></br>
-                                            <input type="checkbox" name="tpint" id="cpint" /><label for="cpint">Pintura</label></br>
-                                            <input type="checkbox" name="tjud" id="cjud" /><label for="cjud">Judô</label></br>
-                                            <input type="checkbox" name="tfut" id="cfut" /><label for="cfut">Futebol</label></br>
-                                        </td>
-                                    </tr>
-                                </th>
-                            </tbody>
+                        <tbody>
+                            <th scope="colgroup">
+                                <tr>
+                                    <td><label for="cserie">Série:</br>
+                                            <select name="tserie" id="cserie">
+                                                <option value="valor1">Pré-escolar</option>
+                                                <option value="valor2">1ª série do 1º grau</option>
+                                            </select></label>
+                                    </td>
+                                    <td>Turno:</br>
+                                        <input type="radio" name="tman" id="cman" checked value="M" />
+                                        <label for="cman">Manhã</label></br>
+
+                                        <input type="radio" name="tman" id="ctar" value="T" />
+                                        <label for="ctar">Tarde</label>
+                                    </td>
+                                    <td>Atividades Extracurriculares</br>
+                                        <input type="checkbox" name="tinf" id="cinf" />
+                                        <label for="cinf">Informática</label></br>
+
+                                        <input type="checkbox" name="tmus" id="cmus" />
+                                        <label for="cmus">Música</label></br>
+
+                                        <input type="checkbox" name="tbal" id="cbal" />
+                                        <label for="cbal">Balet</label></br>
+
+                                        <input type="checkbox" name="tpint" id="cpint" />
+                                        <label for="cpint">Pintura</label></br>
+
+                                        <input type="checkbox" name="tjud" id="cjud" />
+                                        <label for="cjud">Judô</label></br>
+
+                                        <input type="checkbox" name="tfut" id="cfut" />
+                                        <label for="cfut">Futebol</label></br>
+
+                                    </td>
+                                </tr>
+                            </th>
+                        </tbody>
                         </thead>
-                    
+
 
                     </table>
                 </div>
             </fieldset>
+
+
         </form>
     </div>
     <footer id="rodape">
 
-        <button type="submit" name="enviar"> Enviar Formulário</button>
-        <button type="reset" name="resetar">Limpar Campos</button>
+        <input type="submit" value="Enviar Formulário">
+        <input type="reset" value="Limpar Campos">
     </footer>
 
 </body>
