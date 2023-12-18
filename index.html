@@ -72,11 +72,28 @@
                         <tbody>
                             <th scope="colgroup">
                                 <tr>
-                                    <td><label for="cserie">Série:</br>
+                                    <td>
+                                        <label for="cserie">Série:</br>
                                             <select name="tserie" id="cserie">
-                                                <option value="valor1">Pré-escolar</option>
-                                                <option value="valor2">1ª série do 1º grau</option>
-                                            </select></label>
+
+                                                <optgroup label="Primeiro Grau">
+                                                    <option value="valor2" selected>1ª série </option>
+                                                    <option value="valor2">2ª série </option>
+                                                    <option value="valor2">3ª série </option>
+                                                    <option value="valor2">4ª série </option>
+                                                    <option value="valor2">5ª série </option>
+                                                    <option value="valor2">6ª série </option>
+                                                    <option value="valor2">7ª série </option>
+                                                    <option value="valor2">8ª série </option>
+                                                </optgroup>
+                                                <optgroup label="Segundo Grau">
+
+                                                    <option value="valor2">1º ano </option>
+                                                    <option value="valor2">2º ano </option>
+                                                    <option value="valor2">3º ano </option>
+                                                </optgroup>
+                                            </select>
+                                        </label>
                                     </td>
                                     <td>Turno:</br>
                                         <input type="radio" name="tman" id="cman" checked value="M" />
